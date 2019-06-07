@@ -1,0 +1,144 @@
+/*
+Theme Name: K — Hemingway Child Theme
+Theme URI: https://www.kissllonario.com
+Description: Child theme for the Hemingway theme
+Author: Manuel Bretones (parent theme: Anders Norén)
+Author URI: https://www.kissllonario.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: hemingway
+Version: 0.1
+*/
+
+/* CSS @import no longer best practice :); */
+/* Enqueue parent via functions.php */
+
+/*-----------------------------------------------------------------------------------
+
+	0.	CSS Reset & Clearfix
+	1.	Document Setup
+	2.  Structure
+	3.	Header
+	4.	Navigation
+	5.	Main Content
+	6.  Single post
+	7.	Post Content
+	8.	Comments
+	9.	Pagination
+	10.	Page & Page Templates
+	11.	Sidebar
+	12.	Footer
+	13. Credits
+	14.	Responsive
+
+----------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------------- */
+/*	1. Document setup
+/* -------------------------------------------------------------------------------- */
+
+::-moz-selection {
+	background-color: #18CAFE !important; /* rojo kissllonario: #CC144A */
+	color: #000;
+}
+::selection {
+	background-color: #18CAFE !important; /* rojo kissllonario: #CC144A */
+	color: #000;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	2.	Structure
+/* -------------------------------------------------------------------------------- */
+
+.section-inner {
+	width: 1200px;
+	max-width: 86%;
+}
+.wrapper {
+	margin-top: 70px;
+}
+
+.sidebar {
+	width: 30%;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	3. Header
+/* -------------------------------------------------------------------------------- */
+
+div.header {
+	padding: 65px 0;
+}
+
+h3.blog-description {
+	color: #18CAFE;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/*	4. Navigation
+/* -------------------------------------------------------------------------------- */
+
+/* Toggle based on scroll (sticky navigation) */
+.fixed-nav {
+    z-index:222;
+    margin:0 auto;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    text-align: center;
+}
+/* End —Toggle based on scroll (sticky navigation) */
+
+
+
+/* -------------------------------------------------------------------------------- */
+/*	11. Sidebar
+/* -------------------------------------------------------------------------------- */
+
+.widget {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.k-widget-border {
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	box-shadow: 0 3px 1px #EEE;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/*	14. Responsive
+/* -------------------------------------------------------------------------------- */
+
+@media ( max-width: 1200px ) {
+
+
+	body { font-size: 16px; }
+	
+	/* Structure --------------------------------------- */
+	
+	.wrapper { 	margin-top: 7.5%; }
+
+	/* Post Content --------------------------------------- */
+
+	.post-content { 
+		font-size: 17px;
+	}
+
+
+}

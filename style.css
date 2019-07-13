@@ -112,6 +112,7 @@ h3.blog-description {
 /* Post Quotes --------------------------------------- */
 .post-content blockquote {
 	background: #CDE9FF;
+	color: #555;
 }
 
 
